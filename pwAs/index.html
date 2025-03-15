@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Consultoría</title>
+    <link rel="stylesheet" href="../pwAs/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Xolotsystem</h1>
+        <div class="logoMenu"><img src="../pwAs/assets/df46f24a-b873-46db-adfa-5eabd95650e5-removebg-preview.png" alt="Logocropped" ></div>
+        <div class="menu-icon">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/services.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <!--  <section>
+            <img src="../assets/logo.png" alt="Logo">
+            <h2>Misión</h2>
+            <p>Brindar servicios de consultoría de alta calidad...</p>
+            <h2>Visión</h2>
+            <p>Ser la empresa líder en consultoría...</p>
+        </section>
+    
+        <section>
+            <button id="toggle-info">Ver Misión y Visión</button>
+            <div id="info-container" class="hidden">
+                <div class="info-box">
+                    <h2>Misión</h2>
+                    <p>Brindar servicios de consultoría de alta calidad...</p>
+                </div>
+                <div class="info-box">
+                    <h2>Visión</h2>
+                    <p>Ser la empresa líder en consultoría...</p>
+                </div>
+            </div>
+        </section>-->
+        <section>
+            
+            <div id="info-container">
+                <div class="info-box" onclick="toggleInfo('mision')">
+                    <h2>Misión</h2>
+                    <div id="mision" class="hidden">
+                        <div class="Misión"><img src="assets/consultoria-web.png" alt="Logocropped" ></div>
+                     
+                        <p>Brindar soluciones tecnológicas innovadoras en consultoría, servidores web y sistemas, optimizando la infraestructura digital de nuestros clientes para garantizar seguridad, rendimiento y escalabilidad.</p>
+                    </div>
+                </div>
+                <div class="info-box" onclick="toggleInfo('vision')">
+                    <h2>Visión</h2>
+                    <div id="vision" class="hidden">
+                        <div class="Misión"><img src="../pwAs/assets/64e795c63bd4fec4889773c6_transformacion-digital.jpg" alt="Logocropped" ></div>
+                       
+                        <p>Ser líderes en transformación digital, ofreciendo servicios de alta calidad que impulsen la eficiencia y competitividad de las empresas en un mundo cada vez más conectado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../pwAs/scripts/scripts.js"></script>
+</body>
+</html>
