@@ -3,65 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Consultoría</title>
-    <link rel="stylesheet" href="../pwAs/styles/styles.css">
+    <title>Xolotsystem</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Xolotsystem</h1>
-        <div class="logoMenu"><img src="../pwAs/assets/df46f24a-b873-46db-adfa-5eabd95650e5-removebg-preview.png" alt="Logocropped" ></div>
-        <div class="menu-icon">☰</div>
+        <div class="logo">Xolotsystem</div>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/services.html">Servicios</a></li>
+            <ul class="opciones">
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#">Contáctanos</a></li>
             </ul>
         </nav>
+        <button class="btn-consulta">Asesórate con nosotros</button>
     </header>
-    <main>
-      <!--  <section>
-            <img src="../assets/logo.png" alt="Logo">
-            <h2>Misión</h2>
-            <p>Brindar servicios de consultoría de alta calidad...</p>
-            <h2>Visión</h2>
-            <p>Ser la empresa líder en consultoría...</p>
-        </section>
     
-        <section>
-            <button id="toggle-info">Ver Misión y Visión</button>
-            <div id="info-container" class="hidden">
-                <div class="info-box">
-                    <h2>Misión</h2>
-                    <p>Brindar servicios de consultoría de alta calidad...</p>
-                </div>
-                <div class="info-box">
-                    <h2>Visión</h2>
-                    <p>Ser la empresa líder en consultoría...</p>
-                </div>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 style="color: white;"><span style="color: orange;">EL VALOR DE LO INTANGIBLE</span></h1>
+            <p><span style="color: orange;">Transformamos tu negocio</span> con nuestras soluciones personalizadas.</p>
+            <p>Nos basamos en los 3 pilares esenciales para el crecimiento de cualquier negocio:</p>
+            <ul>
+                <li><strong style="color: orange;">Estrategias</strong> rentables</li>
+                <li><strong style="color: orange;">Comunicación efectiva</strong> de marca</li>
+                <li><strong style="color: orange;">Potenciación del talento</strong> humano</li>
+            </ul>
+            <button class="btn-info">Conoce cómo te podemos ayudar</button>
+        </div>
+        <div class="hero-image" style="position: relative;">
+            <img src="" alt="Fondo" style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <img src="assets/df46f24a-b873-46db-adfa-5eabd95650e5-removebg-preview.png" alt="Logo con engranaje" style="position: relative; z-index: 1;">
+        </div>
+    </section>
+    
+    <section class="services">
+        <h2>Servicios</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="infraestructura.png" alt="Infraestructura tecnológica">
+                <h3>Optimización de infraestructura tecnológica</h3>
+                <p>Mejora el rendimiento, reduce costos y aumenta la eficiencia operativa.</p>
             </div>
-        </section>-->
-        <section>
-            
-            <div id="info-container">
-                <div class="info-box" onclick="toggleInfo('mision')">
-                    <h2>Misión</h2>
-                    <div id="mision" class="hidden">
-                        <div class="Misión"><img src="assets/consultoria-web.png" alt="Logocropped" ></div>
-                     
-                        <p>Brindar soluciones tecnológicas innovadoras en consultoría, servidores web y sistemas, optimizando la infraestructura digital de nuestros clientes para garantizar seguridad, rendimiento y escalabilidad.</p>
-                    </div>
-                </div>
-                <div class="info-box" onclick="toggleInfo('vision')">
-                    <h2>Visión</h2>
-                    <div id="vision" class="hidden">
-                        <div class="Misión"><img src="../pwAs/assets/64e795c63bd4fec4889773c6_transformacion-digital.jpg" alt="Logocropped" ></div>
-                       
-                        <p>Ser líderes en transformación digital, ofreciendo servicios de alta calidad que impulsen la eficiencia y competitividad de las empresas en un mundo cada vez más conectado.</p>
-                    </div>
-                </div>
+            <div class="service">
+                <img src="soporte.png" alt="Soporte técnico">
+                <h3>Soporte técnico especializado en enfoque al cliente</h3>
+                <p>Con enfoque al cliente garantiza soluciones eficientes y una mejor experiencia de usuario.</p>
             </div>
-        </section>
-    </main>
-    <script src="../pwAs/scripts/scripts.js"></script>
+            <div class="service">
+                <img src="consultoria.png" alt="Consultoría administrativa">
+                <h3>Consultoría en administración de sistemas</h3>
+                <p>Optimiza recursos, mejora la seguridad y garantiza un funcionamiento eficiente.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Asesórate con Nosotros</h2>
+        <div class="form-container">
+            <!-- Div izquierdo: Formulario -->
+            <div class="form-left">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="correo">Correo*</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa*</label>
+                            <input type="text" id="empresa" name="empresa" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Div derecho: Texto -->
+            <div class="form-right">
+                <p>¿Cómo podemos ayudarte? Te invitamos a que te pongas en contacto con nosotros para cualquier duda o pregunta a través de correo.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
